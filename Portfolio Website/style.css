@@ -1,0 +1,111 @@
+:root {
+
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-bolder: 900;
+
+    /* FONT FAMILY */
+    --font-family: 'Poppins', sans-serif;
+
+    /* FONT SIZE */
+    --text-sm: 1.2rem;
+    --text-base: 1.6rem;
+    --text-paragraph: rem;
+    --text-h5: 2.4rem;
+    --text-h4: 3.2em;
+    --text-h3: 4rem;
+    --text-h2: 4.8rem;
+    --text-h1: 6.2rem;
+    --text-large: 7.8rem;
+    --text-very-large: 9.6rem;
+    --text-huge: 12rem;
+
+    /* COLOR */
+    --primary-base: #BBE1FA;
+    --secondary-base: #0F4C75;
+    --tertiary-base: #88888830;
+    --white: #ffffff;
+    --black: #000000;
+
+}
+
+/* -------------------- GLOBAL STYLES --------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bolder);
+    color: var(--primary-base);
+    background-color: var(--black);
+}
+
+.container {
+    max-width: 1800px;
+    width: 90%;
+    margin: 5% auto;
+    background-color: var(--black);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-text {
+    width: min-content;
+    font-weight: var(--font-weight-bolder);
+    font-size: var(--text-h1);
+}
+
+.hamburger-icon {
+    background-color: var(--primary-base);
+}
+
+h1 {
+    font-size: var(--text-h1);
+}
+
+h2 {
+    font-size: var(--text-h2);
+}
+
+h3 {
+    font-size: var(--text-h3);
+}
+
+h4 {
+    font-size: var(--text-h4);
+}
+
+h5 {
+    font-size: var(--text-h5);
+}
+
+/* -------------------- COMPONENTS --------------------*/
+
+.highlight {
+    font-size: var(--text-very-large);
+    font-weight: var(--font-weight-bolder)
+}
+
+.highlight-primary {
+    background-color: var(--tertiary-base);
+    color: var(--secondary-base);
+}
+
+.icon {
+    width: 3rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+}
