@@ -6,7 +6,7 @@
     --font-weight-bolder: 900;
 
     /* FONT FAMILY */
-    --font-family: 'Poppins', sans-serif;
+    --font-family: "Barrio", system-ui;
 
     /* FONT SIZE */
     --text-sm: 1.2rem;
@@ -56,12 +56,6 @@ body {
     background-color: var(--black);
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 .logo-text {
     width: min-content;
     font-weight: var(--font-weight-bolder);
@@ -96,7 +90,6 @@ h5 {
 
 .highlight {
     font-size: var(--text-very-large);
-    font-weight: var(--font-weight-bolder)
 }
 
 .highlight-primary {
@@ -108,4 +101,14 @@ h5 {
     width: 3rem;
     padding: 0.4rem;
     border-radius: 50%;
+}
+
+/* -------------------- SECTIONS --------------------*/
+
+/* ---------- NAVIGATION ---------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
