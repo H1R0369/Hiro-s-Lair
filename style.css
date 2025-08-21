@@ -6,7 +6,7 @@
     --font-weight-bolder: 900;
 
     /* FONT FAMILY */
-    --font-family: 'Barrio', 'Poppins', sans-serif;
+    --font-family: "Barriecito", 'Poppins', sans-serif;
 
     /* FONT SIZE */
     --text-sm: 1.2rem;
@@ -112,6 +112,7 @@ h5 {
     justify-content: space-between;
     align-items: flex-start;
 }
+
 
 
 
