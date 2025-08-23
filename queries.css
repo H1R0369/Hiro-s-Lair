@@ -23,6 +23,11 @@
         transform: scale(1.2, 1.2);
     }
 
+    .pfp:hover {
+        border: 10px solid var(--secondary-base);
+        border-radius: 2rem;
+    }
+
     /* -------------------- SECTIONS --------------------*/
 
     /* ---------- NAVIGATION ----------- */
