@@ -87,14 +87,6 @@ h5 {
     font-size: var(--text-h5);
 }
 
-.scale-on-hover {
-    transition: 0.5s;
-}
-
-.scale-on-hover:hover {
-    transform: scale(1.2, 1.2);
-}
-
 /* -------------------- COMPONENTS --------------------*/
 
 .highlight {
