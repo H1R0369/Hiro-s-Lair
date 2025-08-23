@@ -1,20 +1,43 @@
-/* -------------------- MEDIA QUERIES --------------------*/
-
 @media (min-width: 768px) {
-    
+
+    html {
+        font-size: 90%;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1150px) {
+
+    /* -------------------- GLOBAL STYLES --------------------*/
 
     html {
         font-size: 100%;
     }
 
+    /* -------------------- COMPONENTS --------------------*/
+
     .scale-on-hover {
     transition: 0.5s;
-}
+    }
 
     .scale-on-hover:hover {
         transform: scale(1.2, 1.2);
+    }
+
+    /* -------------------- SECTIONS --------------------*/
+
+    /* ---------- NAVIGATION ----------- */
+
+    .nav-links-container {
+        display: flex;
+    }
+
+   .hamburger-btn {
+        display: none;
+    }
+
+    /* -------------------- MISC --------------------*/
+
+    .dropdown-menu-container {
+        display: none;
     }
 }
