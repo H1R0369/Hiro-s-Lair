@@ -1,28 +1,40 @@
 let dropdown = document.getElementsByClassName('dropdown-menu-container')[0];
-let homeBtns = document.getElementsByClassName('home')
-let clickables = document.querySelectorAll('.clickable');
+let homeBtns = document.getElementsByClassName('home');
+let clickableTxts = document.querySelectorAll('.clickable-text');
+let clickableImgs = document.querySelectorAll('.clickable-img-round');
 
-document.getElementsByClassName('hamburger-btn')[0].addEventListener('click', () => {transitionMenu('open')});
+document.getElementsByClassName('hamburger-btn')[0].addEventListener('click', () => {
+    setTimeout(() => {
+        dropdown.classList.add('dropdown-opened');
+    }, 200);
+});
 
 for (let i = 0; i < homeBtns.length; i++) {
-        document.getElementsByClassName('home')[i].addEventListener('click', () => {transitionMenu('close')});
+    homeBtns[i].addEventListener('click', () => {
+        setTimeout(() => {
+            dropdown.classList.remove('dropdown-opened');
+        }, 200);
+    })
 };
 
 if (window.innerWidth < 1024) {
-    for (let i = 0; i < clickables.length; i++) {
-        clickables[i].addEventListener('click', () => {
-            clickables[i].style.transform = 'scale(1.2, 1.2)';
+    for (let i = 0; i < clickableTxts.length; i++) {
+        let txt = clickableTxts[i]
+        txt.addEventListener('click', () => {
+            txt.classList.add('txt-clicked');
             setTimeout(() => {
-                clickables[i].style.transform = 'scale(1, 1)';
+                txt.classList.remove('txt-clicked');
             }, 200);
-        });
+        })
+    };
+
+    for (let i = 0; i < clickableImgs.length; i++) {
+        let txt = clickableImgs[i]
+        txt.addEventListener('click', () => {
+            txt.classList.add('round-img-clicked');
+            setTimeout(() => {
+                txt.classList.remove('round-img-clicked');
+            }, 2000);
+        })
     };
 }
-
-function transitionMenu(action) {
-    let xTranslation = action == 'open' ? '0' : '100%';
-    let delay = innerWidth < 1024 ? 200 : 0;
-    setTimeout(() => {
-        dropdown.style.transform = `translate(${xTranslation}, 0)`;
-    }, delay);
-};
