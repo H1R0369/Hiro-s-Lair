@@ -1,0 +1,20 @@
+/* -------------------- MEDIA QUERIES --------------------*/
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px) {
+
+    html {
+        font-size: 100%;
+    }
+
+    .scale-on-hover {
+    transition: 0.5s;
+}
+
+    .scale-on-hover:hover {
+        transform: scale(1.2, 1.2);
+    }
+}
