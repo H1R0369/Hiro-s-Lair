@@ -5,6 +5,14 @@
     html {
         font-size: 90%;
     }
+
+    /* -------------------- SECTIONS --------------------*/
+
+    /* ---------- NAVIGATION ---------- */
+
+    .navbar {
+        height: 100vh;
+    }
 }
 
 @media (min-width: 1150px) {
@@ -48,4 +56,3 @@
         display: none;
     }
 }
-
