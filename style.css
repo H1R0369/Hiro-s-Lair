@@ -49,22 +49,16 @@ body {
     background-color: var(--black);
 }
 
-button {
-    border: none;
-    background-color: var(--primary-base);
-}
-
-.container {
+.main-container {
     max-width: 1800px;
     width: 90%;
     margin: 5% auto;
     background-color: var(--black);
 }
 
-.logo-text {
-    width: min-content;
-    font-weight: var(--font-weight-bolder);
-    font-size: var(--text-h1);
+button {
+    border: none;
+    background-color: var(--primary-base);
 }
 
 h1 {
@@ -88,6 +82,15 @@ h5 {
 }
 
 /* -------------------- COMPONENTS --------------------*/
+
+.logo-text-container {
+    position: relative;
+}
+
+.logo-text-2 {
+    position: absolute;
+    right: -30px;
+}
 
 .highlight {
     font-size: var(--text-very-large);
@@ -122,6 +125,10 @@ h5 {
     user-select: none;
 }
 
+.clickable {
+    transition: 0.5s;
+}
+
 /* -------------------- SECTIONS --------------------*/
 
 /* ---------- NAVIGATION ---------- */
@@ -134,17 +141,23 @@ h5 {
 
 /* -------------------- MISC --------------------*/
 
-.dropdown-menu {
-    display: none;
+.dropdown-menu-container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
     height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    transition: 0.5s;
+    transform: translate(100%, 0);
     background-color: var(--black);
+}
+
+.dropdown-menu-container > .logo-text-container {
+    margin-bottom: 8rem;
 }
 
