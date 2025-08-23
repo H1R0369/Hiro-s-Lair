@@ -25,6 +25,7 @@
     --primary-base: #BBE1FA;
     --secondary-base: #0F4C75;
     --tertiary-base: #88888830;
+    --quaternary-base: gray;
     --white: #ffffff;
     --black: #000000;
 
@@ -129,8 +130,12 @@ button {
     user-select: none;
 }
 
-.clickable {
+.clickable-text {
     transition: 0.5s;
+}
+
+.clickable-img-round {
+    transition: 1s;
 }
 
 /* -------------------- SECTIONS --------------------*/
@@ -141,6 +146,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 10rem;
 }
 
 .logo-text-container {
@@ -167,12 +173,58 @@ button {
 
 }
 
+/* ---------- HERO ---------- */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pfp {
+    max-width: 25rem;
+    width: 100%;
+    border: 10px solid black;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.pfp-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.pfp-caption {
+    color: var(--quaternary-base);
+    font-size: var(--text-sm);
+}
+
+/* -------------------- ANIMATIONS --------------------*/
+
+.dropdown-menu-container.dropdown-opened {
+    transform: translate(0, 0);
+}
+
+.clickable-text.txt-clicked {
+    transform: scale(1.2, 1.2)
+}
+
+.round-img-clicked {
+    border: 10px solid var(--secondary-base);
+    border-radius: 3rem;
+}
+
 /* -------------------- MISC --------------------*/
 
 .dropdown-menu-container {
     height: 100%;
     width: 100%;
-    padding: 5rem 10%;
+    padding: 5rem;
     position: fixed;
     top: 0;
     left: 0;
