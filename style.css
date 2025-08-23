@@ -146,7 +146,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .logo-text-container {
@@ -245,3 +245,4 @@ button {
     border-radius: 5rem;
     background-color: var(--secondary-base);
 }
+
