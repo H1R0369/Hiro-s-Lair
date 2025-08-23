@@ -56,9 +56,12 @@ body {
     background-color: var(--black);
 }
 
-button {
-    border: none;
-    background-color: var(--primary-base);
+.nav-links-container {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-weight: var(--font-weight-bold);
 }
 
 h1 {
@@ -81,16 +84,22 @@ h5 {
     font-size: var(--text-h5);
 }
 
+p {
+    font-size: var(--text-base);
+}
+
+a {
+    display: inline-block;
+    font-size: var(--text-base);
+    text-decoration: none;
+    color: var(--primary-base);
+}
+
+button {
+    border: none;
+    background-color: var(--primary-base);
+}
 /* -------------------- COMPONENTS --------------------*/
-
-.logo-text-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-text-2 {
-    align-self: center;
-}
 
 .highlight {
     font-size: var(--text-very-large);
@@ -99,13 +108,6 @@ h5 {
 .highlight-primary {
     background-color: var(--tertiary-base);
     color: var(--secondary-base);
-}
-
-.btn-rect {
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-normal);
-    padding: 0.5rem;
-    border-radius: 10rem;
 }
 
 .btn-circle {
@@ -141,16 +143,36 @@ h5 {
     align-items: flex-start;
 }
 
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-text-2 {
+    align-self: center;
+}
+
+.nav-links-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.contact-anchor {
+    color: var(--black);
+    background-color: var(--primary-base);
+    border-radius: 20rem;
+    padding: 0.8rem;
+
+}
+
 /* -------------------- MISC --------------------*/
 
 .dropdown-menu-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
     height: 100%;
     width: 100%;
+    padding: 5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -159,3 +181,15 @@ h5 {
     background-color: var(--black);
 }
 
+.dropdown-links-container {
+    text-align: center;
+    margin-top: 5rem;
+    list-style: none;
+}
+
+.dropdown-links-container > li {
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    background-color: var(--secondary-base);
+}
