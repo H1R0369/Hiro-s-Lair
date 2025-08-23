@@ -29,6 +29,8 @@
     --white: #ffffff;
     --black: #000000;
 
+    /*  MISC */
+    --navbar-height: 200px;
 }
 
 /* -------------------- GLOBAL STYLES --------------------*/
@@ -146,6 +148,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    height: var(--navbar-height);
     margin-bottom: 5rem;
 }
 
@@ -181,6 +184,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    height: calc(100vh - var(--navbar-height));
 }
 
 .pfp {
@@ -245,4 +249,3 @@ button {
     border-radius: 5rem;
     background-color: var(--secondary-base);
 }
-
