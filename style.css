@@ -84,12 +84,12 @@ h5 {
 /* -------------------- COMPONENTS --------------------*/
 
 .logo-text-container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-text-2 {
-    position: absolute;
-    right: -30px;
+    align-self: center;
 }
 
 .highlight {
@@ -155,9 +155,5 @@ h5 {
     transition: 0.5s;
     transform: translate(100%, 0);
     background-color: var(--black);
-}
-
-.dropdown-menu-container > .logo-text-container {
-    margin-bottom: 8rem;
 }
 
