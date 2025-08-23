@@ -154,7 +154,7 @@ button {
 }
 
 .nav-links-container {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 3rem;
 }
@@ -172,7 +172,7 @@ button {
 .dropdown-menu-container {
     height: 100%;
     width: 100%;
-    padding: 5rem;
+    padding: 5rem 10%;
     position: fixed;
     top: 0;
     left: 0;
