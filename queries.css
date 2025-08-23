@@ -1,7 +1,17 @@
 @media (min-width: 768px) {
 
+    /* -------------------- GLOBAL STYLES --------------------*/
+
     html {
         font-size: 90%;
+    }
+
+    /* -------------------- SECTIONS --------------------*/
+
+    /* ---------- NAVIGATION ---------- */
+
+    .navbar {
+        height: 100vh;
     }
 }
 
