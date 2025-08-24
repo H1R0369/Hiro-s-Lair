@@ -188,7 +188,6 @@ button {
     width: 100%;
     border: 10px solid black;
     border-radius: 50%;
-    transition: 1s;
 }
 
 .pfp-text-container {
@@ -206,7 +205,7 @@ button {
 
 /* -------------------- ANIMATIONS --------------------*/
 
-.dropdown-menu-container.dropdown-opened {
+.sidebar-container.sidebar-opened {
     transform: translate(0, 0);
 }
 
@@ -217,33 +216,49 @@ button {
 .round-img-clicked {
     border: 10px solid var(--secondary-base);
     border-radius: 3rem;
+    animation-name: round-img-anim;
+    animation-duration: 6s;
+    animation-play-state: running;
+}
+
+@keyframes round-img-anim {
+    0% {border-color: blue} 10% {border-color: red} 20% {border-color: cyan} 
+    30% {border-color: darkblue} 40% {border-color: yellow} 50% {border-color: pink} 
+    60% {border-color: green} 70% {border-color: salmon} 80% {border-color: whitesmoke} 90% {border-color: greenyellow} 
+    100% {border-color: blue}
+}
+
+@keyframes bubbling {
+    0% {transform: scale(1.2, 1.2);}
+    50% {transform: scale(1.1, 1.1)}
+    100% {transform: scale(1.2, 1.2)}
 }
 
 /* -------------------- MISC --------------------*/
 
-.dropdown-menu-container {
+.sidebar-container {
     height: 100%;
     width: 100%;
     padding: 5rem;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
     transition: 0.5s;
     transform: translate(100%, 0);
     background-color: #00000030;
     backdrop-filter: blur(10px);
 }
 
-.dropdown-links-container {
+.sidebar-links-container {
     text-align: center;
     margin-top: 5rem;
     list-style: none;
 }
 
-.dropdown-links-container > li {
+.sidebar-links-dcontainer > li {
     margin-bottom: 2rem;
     padding: 0.5rem;
     border-radius: 5rem;
     background-color: var(--secondary-base);
 }
-
