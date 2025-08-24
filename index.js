@@ -1,5 +1,5 @@
-let sidebar = document.getElementsByClassName('sidebar-container')[0];
-let homeBtns = document.getElementsByClassName('home');
+let sidebar = document.querySelector('.sidebar-container');
+let homeBtns = document.querySelectorAll('.home');
 let clickableTxts = document.querySelectorAll('.clickable-text');
 let clickableImgs = document.querySelectorAll('.clickable-img-round');
 
@@ -9,37 +9,38 @@ document.getElementsByClassName('hamburger-btn')[0].addEventListener('click', ()
     }, 200);
 });
 
-for (let i = 0; i < homeBtns.length; i++) {
-    homeBtns[i].addEventListener('click', () => {
+homeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        setTimeout(() => {
+            sidebar.classList.remove('sidebar-opened')
+        }, 200);
+    })
+})
+
+document.querySelectorAll('.btn-anchor').forEach(link => {
+    link.addEventListener('click', () => {
         setTimeout(() => {
             sidebar.classList.remove('sidebar-opened');
         }, 200);
     })
-};
-
-document.querySelectorAll('.side-link').forEach(link => {
-    link.addEventListener('click', () => {
-        sidebar.classList.remove('sidebar-opened');
-    })
 })
+
 if (window.innerWidth < 1024) {
-    for (let i = 0; i < clickableTxts.length; i++) {
-        let txt = clickableTxts[i]
+    clickableTxts.forEach(txt => {
         txt.addEventListener('click', () => {
             txt.classList.add('txt-clicked');
             setTimeout(() => {
                 txt.classList.remove('txt-clicked');
             }, 200);
         })
-    };
+    })
 
-    for (let i = 0; i < clickableImgs.length; i++) {
-        let img = clickableImgs[i]
+    clickableImgs.forEach(img => {
         img.addEventListener('click', () => {
             img.classList.add('round-img-clicked');
             setTimeout(() => {
-                img.classList.remove('round-img-clicked');
-            }, 3000);
+                img.classList.remove('round-img-clicked')
+            }, 2000);
         })
-    };
+    })
 }
