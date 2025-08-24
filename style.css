@@ -140,12 +140,22 @@ button {
 
 /* -------------------- SECTIONS --------------------*/
 
-/* ---------- NAVIGATION ---------- */
+/* ---------- HEADER ---------- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----- NAVIGATION ----- */
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
     margin-bottom: 5rem;
 }
 
@@ -173,7 +183,7 @@ button {
 
 }
 
-/* ---------- HERO ---------- */
+/* ----- HERO ----- */
 
 .hero-section {
     display: flex;
@@ -181,6 +191,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
     margin-bottom: 20rem;
 }
 
@@ -204,7 +215,17 @@ button {
     font-size: var(--text-sm);
 }
 
-/* -------------------- ABOUT ME --------------------*/
+/* ---------- MAIN ---------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* ----- ABOUT ME ----- */
 
 .about-section {
     display: flex;
@@ -214,7 +235,6 @@ button {
     align-items: center;
     text-align: center;
     height: 100vh;
-    padding-block: 5rem;
 }
 
 .about-paragraph {
@@ -280,4 +300,3 @@ button {
     border-radius: 5rem;
     background-color: var(--secondary-base);
 }
-
