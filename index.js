@@ -17,6 +17,11 @@ for (let i = 0; i < homeBtns.length; i++) {
     })
 };
 
+document.querySelectorAll('.side-link').forEach(link => {
+    link.addEventListener('click', () => {
+        sidebar.classList.remove('sidebar-opened');
+    })
+})
 if (window.innerWidth < 1024) {
     for (let i = 0; i < clickableTxts.length; i++) {
         let txt = clickableTxts[i]
