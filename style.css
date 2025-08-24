@@ -90,7 +90,7 @@ p {
 }
 
 a {
-    display: inline-block;
+    display: block;
     font-size: var(--text-base);
     text-decoration: none;
     color: var(--primary-base);
@@ -181,6 +181,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 20rem;
 }
 
 .pfp {
@@ -201,6 +202,22 @@ button {
 .pfp-caption {
     color: var(--quaternary-base);
     font-size: var(--text-sm);
+}
+
+/* -------------------- ABOUT ME --------------------*/
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding-block: 5rem;
+}
+
+.about-paragraph {
+    width: 70%;
 }
 
 /* -------------------- ANIMATIONS --------------------*/
@@ -262,4 +279,3 @@ button {
     border-radius: 5rem;
     background-color: var(--secondary-base);
 }
-
