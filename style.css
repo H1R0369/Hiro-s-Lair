@@ -256,7 +256,7 @@ button {
     list-style: none;
 }
 
-.sidebar-links-dcontainer > li {
+.sidebar-links-container > li {
     margin-bottom: 2rem;
     padding: 0.5rem;
     border-radius: 5rem;
