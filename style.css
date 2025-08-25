@@ -123,7 +123,7 @@ button {
 }
 
 .logo {
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
 }
 
@@ -154,6 +154,7 @@ header {
     justify-content: space-between;
     height: 100vh;
     overflow: hidden;
+    margin-bottom: 50rem;
 }
 
 .scroll-txt {
@@ -203,11 +204,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 50rem;
     height: 100vh;
 }
 
 .pfp {
+    position: sticky;
+    top: 25%;
     max-width: 20rem;
     width: 100%;
     border: 5px solid black;
@@ -220,7 +223,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 50rem;
 }
 
 .pfp-caption {
@@ -346,6 +349,11 @@ main {
     animation-timeline: view();
 }
 
+.fade-in-scale-out-pfp-txt {
+    animation: fade-in-scale-out-pfp-txt;
+    animation-timeline: view();
+}
+
 @keyframes round-img-anim {
     0% {border-color: blue} 10% {border-color: red} 20% {border-color: cyan} 
     30% {border-color: darkblue} 40% {border-color: yellow} 50% {border-color: pink} 
@@ -382,5 +390,13 @@ main {
     0% {opacity: 0; scale: 0} 
     50% {opacity: 1; scale: 1}
     70% {opacity: 0; scale: 0}
+    100% {opacity: 0; scale: 0.5}
+}
+
+@keyframes fade-in-scale-out-pfp-txt {
+    0% {opacity: 0; scale: 0} 
+    10% {opacity: 1; scale: 1}
+    30% {opacity: 1; scale: 1}
+    40% {opacity: 0; scale: 0}
     100% {opacity: 0; scale: 0.5}
 }
