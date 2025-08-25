@@ -2,6 +2,7 @@ let sidebar = document.querySelector('.sidebar-container');
 let homeBtns = document.querySelectorAll('.home');
 let clickableTxts = document.querySelectorAll('.clickable-text');
 let clickableImgs = document.querySelectorAll('.clickable-img-round');
+let popOutElements = document.querySelectorAll('.pop-out-trigger');
 
 document.getElementsByClassName('hamburger-btn')[0].addEventListener('click', () => {
     setTimeout(() => {
@@ -23,6 +24,28 @@ document.querySelectorAll('.btn-anchor').forEach(link => {
             sidebar.classList.remove('sidebar-opened');
         }, 200);
     })
+})
+
+let popOutInterval = 100;
+let display = null;
+
+popOutElements.forEach(el => {
+    display = el.style.display;
+    el.style.display = 'none';
+    setTimeout(() => {
+        el.style.display = display;
+        el.classList.add('pop-out')
+    }, popOutInterval);
+    popOutInterval += 100;
+    console.log(popOutInterval);
+})
+
+popOutElements.forEach(el => {
+    setTimeout(() => {
+        el.classList.remove('pop-out')
+    }, popOutInterval);
+    popOutInterval += 100;
+    console.log(popOutInterval);
 })
 
 if (window.innerWidth < 1024) {
