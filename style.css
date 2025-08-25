@@ -152,7 +152,7 @@ header {
 }
 
 .scroll-txt {
-    padding-bottom: 4rem;
+    padding-bottom: 6em;
     text-align: center;
     animation: bubbling linear;
     animation-duration: 1s;
@@ -311,6 +311,10 @@ main {
     animation-play-state: running;
 }
 
+.pop-out {
+    animation: pop-out 1s;
+}
+
 .scale-out {
     animation: scale-out linear;
     animation-timeline: view();
@@ -334,6 +338,11 @@ main {
     100% {transform: scale(1.2, 1.2)}
 }
 
+@keyframes pop-out {
+    0% {scale: 0}
+    100% {scale: 1}
+}
+
 @keyframes scale-out {
 
     90% {opacity: 1; scale: 1}
@@ -347,4 +356,3 @@ main {
     70% {opacity: 1; scale: 1}
     100% {opacity: 0; scale: 0.5}
 }
-
