@@ -158,7 +158,7 @@ header {
 }
 
 .scroll-txt {
-    padding-bottom: 6em;
+    padding-bottom: 7rem;
     text-align: center;
     animation: bubbling linear;
     animation-duration: 1s;
@@ -400,3 +400,4 @@ main {
     40% {opacity: 0; scale: 0}
     100% {opacity: 0; scale: 0.5}
 }
+
