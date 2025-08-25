@@ -4,6 +4,14 @@ let clickableTxts = document.querySelectorAll('.clickable-text');
 let clickableImgs = document.querySelectorAll('.clickable-img-round');
 let popOutElements = document.querySelectorAll('.pop-out-trigger');
 
+window.addEventListener('scroll', () => {
+    if (window.scrollY === 0) {
+        document.querySelector('.scroll-txt').style.display = 'block';
+    } else {
+        document.querySelector('.scroll-txt').style.display = 'none';
+    }
+}, { passive: true });
+
 document.getElementsByClassName('hamburger-btn')[0].addEventListener('click', () => {
     setTimeout(() => {
         sidebar.classList.add('sidebar-opened');
@@ -67,3 +75,4 @@ if (window.innerWidth < 1024) {
         })
     })
 }
+
