@@ -1,0 +1,67 @@
+@media (min-width: 768px) {
+
+    /* -------------------- GLOBAL STYLES --------------------*/
+
+    html {
+        font-size: 90%;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    /* -------------------- GLOBAL STYLES --------------------*/
+
+    html {
+        font-size: 100%;
+    }
+
+    /* -------------------- COMPONENTS --------------------*/
+
+    .scale-on-hover, .scale-on-hover-along {
+        transition: 0.5s;
+    }
+
+    .scale-on-hover:hover {
+        animation-name: bubbling, fade-in-scale-out;
+        animation-duration: 1s, auto;
+        animation-iteration-count: infinite;
+        animation-timeline: auto, view();
+    }
+
+    .pfp:hover {
+        border: 10px solid var(--secondary-base);
+        border-radius: 2rem;
+        animation-name: round-img-anim;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+
+    /* -------------------- SECTIONS --------------------*/
+
+    /* ---------- NAVIGATION ----------- */
+
+    .nav-links-container {
+        display: flex;
+    }
+
+   .hamburger-btn {
+        display: none;
+    }
+
+    /* -------------------- MISC --------------------*/
+
+    .dropdown-menu-container {
+        display: none;
+    }
+
+    /* -------------------- ANIMATIONS --------------------*/
+    
+    @keyframes fade-in-scale-out-pfp-txt {
+        0% {opacity: 0; transform: scale(0, 0)} 
+        10% {opacity: 1; transform: scale(1, 1)}
+        30% {opacity: 1; transform: scale(1, 1)}
+        40% {opacity: 1; transform: scale(1, 1)}
+        40% {opacity: 0; transform: scale(0, 0)}
+        100% {opacity: 0; transform: scale(0.5, 0.5)}
+    }
+}

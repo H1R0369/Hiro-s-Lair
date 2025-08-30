@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiro's Lair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Barrio&family=Bebas+Neue&family=Butcherman&family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&family=Rubik+Vinyl&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+
+</head>
+<body>
+    <div class="main-container">
+        <header id="home">
+            <div class="nav-scroll-container">
+                <nav class="navbar">
+                    <div class="logo-text-container scale-on-hover clickable pop-out-trigger">
+                        <h1 class="logo-text-1">Hiro<span class="highlight highlight-primary">'s</span></h1>
+                        <h1 class="logo-text-2">Lair</h1>
+                    </div>
+                    <button class="hamburger-btn btn-circle scale-on-hover clickable pop-out-trigger"><img class="icon" src="assets/images/burger-menu-svgrepo-com.svg" alt="hamburger-menu-button"></button>
+                    <ul class="nav-links-container">
+                        <li class="scale-on-hover pop-out-trigger"><a href="#about-section">About Hiro</a></li>
+                        <li class="scale-on-hover pop-out-trigger"><a href="#skills-section">Skills</a></li>
+                        <li class="scale-on-hover pop-out-trigger"><a href="">Projects</a></li>
+                        <li class="scale-on-hover pop-out-trigger"><a href="">Settings</a></li>
+                        <li class="scale-on-hover pop-out-trigger"><a class='contact-anchor' href="">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="scroll-txt pop-out-trigger">
+                    <h2 class="scroll-heading">Scroll</h2>
+                    <h2 class="scroll-arrow">↓</h2>
+                </div>
+            </div>
+            
+            <section class="hero-section">
+                <div class="pfp-container fade-in-scale-out"><img class='pfp clickable-img-round' src="assets/images/pfp.jpg" alt="user-profile-picture"></div>
+                <div class="pfp-text-container">
+                    <div class="fade-in-scale-out-pfp-txt"><h4 class="name scale-on-hover clickable">Sonam Topgey</h4></div>
+                    <div class="fade-in-scale-out-pfp-txt"><p class="pfp-caption scale-on-hover clickable">"currently surviving on html and hope..."</p></div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section id="about-section" class="about-section main-sub-section">
+                <div class="about-heading-container fade-in-scale-out"><h2 class="about-heading scale-on-hover clickable">About Me</h2></div>
+                <div class="about-paragraph-container fade-in-scale-out"><p class="about-paragraph scale-on-hover clickable">
+                    Hey! I’m Sonam Topgey (Hiro for friends). I’ve been learning web development for a few months and built this portfolio as a jump-start for future job chances. I kicked things off with Python, picked up Godot 4 for game dev, and honestly it feels like I’m finally catching up to the kid-me who wanted to make games and apps. I didn’t have the tools back then, but after getting a decent laptop I’m trying to use this prime time to actually build stuff that can change things.
+                </p></div>
+            </section>
+
+            <section id="skills-section" class="skills-section main-sub-section ">
+                <div class="skills-heading-container fade-in-scale-out"><h2 class="skills-heading scale-on-hover clickable">My Skills</h2></div>
+                <div class="skills-logo-container">
+                    <div>
+                        <div class="python-logo-container fade-in-scale-out-fast"><img class="logo scale-on-hover clickable" src="assets/images/python-svgrepo-com.svg" alt="python-logo"></div>
+                        <div class="python-txt-container  fade-in-scale-out-fast"><h4 class="python-txt scale-on-hover clickable">Python</h4></div>
+                    </div>
+                    <div>
+                        <div class="godot-logo-container fade-in-scale-out-fast"><img class="logo scale-on-hover clickable" src="assets/images/godot-svgrepo-com.svg" alt="godot-4-logo"></div>                        
+                        <div class="godot-txt-container  fade-in-scale-out-fast"><h4 class="godot-txt scale-on-hover clickable">Godot-4</h4></div>
+                    </div>
+                    <div>
+                        <div class="css-logo-container fade-in-scale-out-fast"><img class="logo scale-on-hover clickable"src="assets/images/html-5-svgrepo-com.svg" alt="html-5-logo"></div>
+                        <div class="html-txt-container  fade-in-scale-out-fast"><h4 class="html-txt scale-on-hover clickable">HTML-5</h4></div>
+                    </div>
+                    <div>
+                        <div class="css-logo-container fade-in-scale-out-fast"><img class="logo scale-on-hover clickable"src="assets/images/css-svgrepo-com.svg" alt="css-logo"></div>
+                        <div class="css-txt-container  fade-in-scale-out-fast"><h4 class="css-txt scale-on-hover clickable">CSS</h4></div>
+                    </div>
+                    <div>
+                        <div class="js-logo-container fade-in-scale-out-fast"><img class="logo scale-on-hover clickable"src="assets/images/javascript-svgrepo-com.svg" alt="javascript-logo"></div>
+                        <div class="js-txt-container  fade-in-scale-out-fast"><h4 class="js-txt scale-on-hover clickable">Javascript</h4></div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            </p>
+        </main>
+    </div>
+    
+    <div class="other-containers">
+        <div class="sidebar-container">
+            <div class="home logo-text-container scale-on-hover clickable">
+                <h1 class="logo-text-1 ">Hiro<span class="highlight highlight-primary">'s</span></h1>
+                <h1 class="logo-text-2 ">Lair</h1>
+            </div>
+            <ul class="sidebar-links-container">
+                <li class="home"><a class="btn-anchor clickable" href="#home">Home</a></li>
+                <li><a class="btn-anchor clickable" href="#about-section">About Hiro</a></li>
+                <li><a class="btn-anchor clickable" href="#skills-section">Skills</a></li>
+                <li><a class="btn-anchor clickable" href="#">Projects</a></li>
+                <li><a class="btn-anchor clickable" href="#">Settings</a></li>
+                <li><a class="btn-anchor clickable" href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
